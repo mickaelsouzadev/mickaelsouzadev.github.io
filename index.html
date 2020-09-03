@@ -30,45 +30,44 @@
 	        <a class="nav-link" href="#project-sec">Portfolio</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#contact-sec">Contato</a>
+	        <a class="nav-link" href="#contact">Contato</a>
 	      </li>
 	     
 	    </ul>
 	  </div>
 	</nav>
-	<header class="header" id="header">
+	<header class="header mb-2" id="header">
 		<div class="container">
 			<div class="d-flex justify-content-center">
 				<div class="col-lg-9 main-text">
 					<p>
-						A sua solução tecnológica
+						Solucões tecnológicas
 						na palma da sua mão!
 					</p>	
 				</div>	
 			</div>
 			<div id="btn-section">
-				<button class="btn btn-lg btn-gradient btn-rounded" id="main-btn">
+				<a href="#about"><button class="btn btn-lg btn-gradient btn-rounded"id="main-btn">
 					Saber mais
-				</button>
+				</button></a>
 			</div>
 			
 		</div>
 	</header>
-	<section id="about" class="sections">
+	<section id="about" class="sections mt-5">
 		<div class="container text-center">
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-12">
-					<h2 class="section-title">Sobre</h2>
+			<div class="row d-flex justify-content-center mb-3">
+				<div class="col-lg-12 pt-5">
+					<h2 class="section-title pt-2">Sobre</h2>
 					
 				</div>
 				<div class="col-lg-9">
 					<p class="section-p">
-						Meu nome é Mickael Braz de Souza, tenho 18 anos e sou formado no curso
-						técnico em informática para internet integrado com ensino médio, no IFSul 
+						Meu nome é Mickael Braz de Souza, tenho 19 anos e sou formado no curso
+						técnico em informática para internet, no IFSul 
 						Campus Santana do Livramento. Neste curso eu aprendi a desenvolver sites e 
-						sistemas para internet/intranet, e por conta própria comecei a aprender e 
-						desenvolver aplicativos móveis. Se você está interessado em ter o seu próprio 
-						website, em implementar um sistema para gerenciar o seu negócio ou até mesmo 
+						sistemas para internet/intranet. Se você está interessado em ter o seu próprio 
+						website, em implementar um sistema para gerenciar o seu negócio ou quem sabe até mesmo 
 						um aplicativo para facilitar as suas atividades, não perca tempo! Entre em contato
 						comigo e veja o que eu posso fazer por você. 
 					</p>
@@ -77,35 +76,80 @@
 		</div>
 		
 	</section>
-	<div id="after-about">
+	<div id="after-about" class="mt-5">
 			
 	</div> 
-	<section id="services" class="sections">
+	<section id="services" class="sections mt-5">
 		<div class="container text-center">
 			<div class="row d-flex justify-content-center">
-				<div class="col-lg-12">
-					<h2 class="section-title">Serviços</h2>
+				<div class="col-lg-12 pt-5">
+					<h2 class="section-title pt-2">Serviços</h2>
 					<h4 class="section-subtitle">Desenvolvimento de:</h4>
 				</div>
-				<div class="col-lg-12 d-flex justify-content-center">
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="icon-container d-flex justify-content-center flex-column">
 					<div class="icon-service bg-gradient">
 						<img src="img/site.svg" class="svg-icon" id="site-icon"/>
-					</div>
+					</div>	
+					<span class="icon-text">Websites Responsivos</span>
+				</div>
+				<div class="icon-container d-flex justify-content-center flex-column">
 					<div class="icon-service bg-gradient">
 						<img src="img/system.svg" class="svg-icon" id="system-icon"/>
 					</div>
+					<span class="icon-text">Sistemas para internet/intranet</span>
+				</div>
+				<div class="icon-container d-flex justify-content-center flex-column">
 					<div class="icon-service bg-gradient">
 						<img src="img/mobile.svg" class="svg-icon" id="mobile-icon"/>
 					</div>
-				</div>
-				<div class="col-lg-12 d-flex justify-content-center">
-					<span class="icon-text">Websites Responsivos</span>
-					<span class="icon-text">Sistemas para internet/intranet</span>
 					<span class="icon-text">Aplicativos para dispositivos móveis</span>
 				</div>
 			</div>
 		</div>
 		
+	</section>
+	<section id="contact" class="sections mt-5">
+		<div class="container text-center">
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-12 pt-3">
+					<h2 class="section-title">Contato</h2>
+				</div>
+			</div>
+			<div class="row d-flex- justify-content-center pt-4 p-4">
+				<div class="col-lg-5 text-left d-flex flex-column align-items-center m-2">
+					<h4 class=" p-3">Envie uma mensagem:</h4>
+					<form style="width: 100%" class="mb-3">
+				
+						<div class="form-group">
+						    <label>Nome Completo</label>
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome Completo">
+						</div>
+						<div class="form-group">
+						    <label>Email</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+						</div>
+						<div class="form-group">
+						   <label for="exampleFormControlTextarea1">Mensagem</label>
+						   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem"></textarea>
+						</div>
+						<div class="form-group pt-1">
+							<button class="btn btn-block btn-gradient btn-rounded" type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-5 text-left d-flex flex-column contact-info align-items-center m-2">
+					<h4 class="p-3">Mídias Sociais:</h4>
+					<div class="col-lg-10 text-left">
+						<p><i class="fab fa-whatsapp"></i> <strong>(55) 98404-1268</strong></p>
+						<p><i class="fab fa-facebook-square"></i> <strong>Mickael Braz de Souza</strong></p>
+						<p><i class="fas fa-envelope"></i> <strong>mickael.souza.if@gmail.com</strong></p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
 	</section>
 </body>
 </html>
