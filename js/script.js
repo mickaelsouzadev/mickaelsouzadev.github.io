@@ -1,4 +1,4 @@
-const BASE_URL = 'https://send-messages-mickael.herokuapp.com/'
+const BASE_URL = 'https://send-messages-mickael.herokuapp.com'
 const form = document.querySelector('form')
 
 const formSubmit = form.addEventListener('submit', async event => {
