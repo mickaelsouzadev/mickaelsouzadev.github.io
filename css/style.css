@@ -204,6 +204,28 @@ body, html {
 	}
 }
 
+.alert-success {
+	color: #fff;
+	border-color: #14b868;
+	background-color: #14b868;
+	border-radius: 0px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.alert-danger {
+	color: #fff;
+	border-color: #ff2e2e;
+	background-color: #ff2e2e;
+	border-radius: 0px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.hidden {
+	display: none!important;
+}
+
 .svg-icon {
 	fill: #fff;
 }
@@ -218,4 +240,40 @@ body, html {
 
 #mobile-icon {
 	height: 90px;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #f85032;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #f85032 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
