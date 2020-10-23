@@ -11,33 +11,38 @@ let loadingSpinner = document.getElementById('loading-spinner')
 const formSubmit = form.addEventListener('submit', async event => {
 	event.preventDefault();
 
-	loadingSpinner.classList.remove('hidden')
-	loadingSpinner.scrollIntoView()
-	alertDanger.classList.add('hidden')
+	form.classList.add("was-validated")
 
-	const name = document.querySelector('#name').value
-	const email = document.querySelector('#email').value
-	const message = document.querySelector('#message').value
+	if(form.checkValidity() === true) {
+		const name = document.querySelector('#name').value
+		const email = document.querySelector('#email').value
+		const message = document.querySelector('#message').value
 
-	const params = {
-		name,
-		email,
-		message
-	}
-
-	try {
-		const res = await axios.post(`${BASE_URL}/send`, params)
+		const params = {
+			name,
+			email,
+			message
+		}
 		
-		loadingSpinner.classList.add('hidden')
-		alertSuccess.classList.remove('hidden')
-		alertSuccess.scrollIntoView()
+		loadingSpinner.classList.remove('hidden')
+		loadingSpinner.scrollIntoView()
+		alertDanger.classList.add('hidden')
 
-		console.log("Foi: ", res)
-	} catch(e) {
-		loadingSpinner.classList.add('hidden')
-		alertDanger.classList.remove('hidden')
-		alertDanger.scrollIntoView()
 
-		console.log("Olha ae: ", e)
-	}
+		try {
+			const res = await axios.post(`${BASE_URL}/send`, params)
+			
+			loadingSpinner.classList.add('hidden')
+			alertSuccess.classList.remove('hidden')
+			alertSuccess.scrollIntoView()
+
+			console.log("Foi: ", res)
+		} catch(e) {
+			loadingSpinner.classList.add('hidden')
+			alertDanger.classList.remove('hidden')
+			alertDanger.scrollIntoView()
+
+			console.log("Olha ae: ", e)
+		}		
+	}	
 })

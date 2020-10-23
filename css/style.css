@@ -76,7 +76,7 @@ body, html {
 
 
 #btn-section {
-	text-align: left;
+	padding-left: 0px;
 }
 
 #main-btn {
@@ -85,10 +85,6 @@ body, html {
 }
 
 @media(min-width: 992px){
-	#btn-section {
-		text-align: center;
-	}
-
 	#main-btn {
 		margin-top:0.1rem;
 	}
